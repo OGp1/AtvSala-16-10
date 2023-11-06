@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Como usar jQuery</title>
+</head>
+
+<body>
+    <div>
+        <h1>Lista de Nomes</h1>
+    </div>
+    <div>
+        <ul style="font-size: 35px">
+            <li>Maria</li>
+            <li>Marina</li>
+            <li>Mariana</li>
+            <li>Mariah</li>
+            <li>Marcos</li>
+        </ul>
+    </div>
+
+    <button id="btn">Clique</button>
+
+    <script>
+$('#btn').on("click", botao) // Ao clicar no botão a lista ficara azul
+function botao() {
+                $('li').css({ 'color': 'blue' })
+            }
+    </script>
+</body>
+
+</html>
